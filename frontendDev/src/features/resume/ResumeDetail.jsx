@@ -6,8 +6,6 @@ import { format } from "date-fns";
 import { getAISummary, getAIProject } from "../../api/aiApi";
 import { motion, AnimatePresence } from "framer-motion";
 import { BookOpen, Briefcase, GraduationCap, Award, FileText } from "lucide-react";
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
 
 
 function ResumeDetail() {
@@ -104,45 +102,6 @@ function ResumeDetail() {
     temp[idx] = "";
     setAiProjects(temp);
   };
-
-//   const handleDownloadPDF = async () => {
-//   const resumeElement = document.getElementById("resume-content");
-//   if (!resumeElement) return;
-
-//   // Hide unwanted elements: buttons, AI suggestion boxes, editable inputs
-//   const hiddenElements = resumeElement.querySelectorAll(
-//     "button, .ai-suggestion, textarea, .editable-section"
-//   );
-//   hiddenElements.forEach((el) => (el.style.display = "none"));
-
-//   // Capture resume content as a high-quality canvas
-//   const canvas = await html2canvas(resumeElement, { scale: 2 });
-//   const imgData = canvas.toDataURL("image/png");
-
-//   const pdf = new jsPDF("p", "mm", "a4");
-//   const pdfWidth = pdf.internal.pageSize.getWidth();
-//   const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-
-//   let heightLeft = pdfHeight;
-//   let position = 0;
-
-//   pdf.addImage(imgData, "PNG", 0, position, pdfWidth, pdfHeight);
-//   heightLeft -= pdf.internal.pageSize.getHeight();
-
-//   // Add extra pages if needed
-//   while (heightLeft > 0) {
-//     position = heightLeft - pdfHeight;
-//     pdf.addPage();
-//     pdf.addImage(imgData, "PNG", 0, position, pdfWidth, pdfHeight);
-//     heightLeft -= pdf.internal.pageSize.getHeight();
-//   }
-
-//   pdf.save(`${localResume.title || "resume"}.pdf`);
-
-//   // Restore hidden elements
-//   hiddenElements.forEach((el) => (el.style.display = ""));
-// };
-
 
 
   if (loading || !localResume) {
