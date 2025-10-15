@@ -1,0 +1,15 @@
+<!-- save as favicon-briefcase.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <!-- background rounded square -->
+  <rect x="1.5" y="1.5" width="21" height="21" rx="4" fill="#2563eb"/>
+  <!-- briefcase body -->
+  <rect x="4.2" y="7.2" width="15.6" height="9.2" rx="1.2" fill="#fff"/>
+  <!-- briefcase flap -->
+  <rect x="7.4" y="5.2" width="9.2" height="3" rx="0.8" fill="#1e40af"/>
+  <!-- handle -->
+  <rect x="10" y="3.6" width="4" height="1.4" rx="0.6" fill="#1e3a8a"/>
+  <!-- small document icon on briefcase -->
+  <rect x="5.8" y="8.2" width="4.2" height="6" rx="0.6" fill="#e6f2ff"/>
+  <rect x="7.0" y="9.0" width="2.0" height="0.6" rx="0.3" fill="#1e40af"/>
+  <rect x="7.0" y="10.2" width="2.0" height="0.6" rx="0.3" fill="#1e40af"/>
+</svg>
